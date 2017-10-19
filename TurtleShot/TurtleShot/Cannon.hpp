@@ -19,10 +19,17 @@ public:
     void draw();
     
 private:
+    void shoot();
+    void charge();
+    void move();
     sf::Vector2f _position;
     float _angle;
     sf::RectangleShape _shape;
+    sf::RectangleShape _chargeShape;
     bool _goingUp;
+    bool _charging;
+    bool _chargingUp;
+    int _charge;
 };
 
 #endif /* Cannon_hpp */
